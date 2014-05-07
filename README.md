@@ -14,15 +14,15 @@ edna allows you to access your MP3 collection from any networked computer. This 
 
 edna supports:
 
-   -Browsing your music collection from a remote computer.
-   -URL support to allow people to stream specific songs.
-   -Automatic playlist construction for entire directories of songs, including a "shuffle" ability.
-   -The merging of multiple music collections while keeping the files on the remote computer.
+   - Browsing your music collection from a remote computer.
+   - URL support to allow people to stream specific songs.
+   - Automatic playlist construction for entire directories of songs, including a "shuffle" ability.
+   - The merging of multiple music collections while keeping the files on the remote computer.
 
 While any silly web server can do this (serve up MP3s), there are two cool features about edna:
  
-   -The pages are dynamically constructed, adjusting to directory structure and the files in those directories. This is much nicer than using simple directory indexing. While the dynamic file list could be done with various CGI or PHP-like tools, the dynamic directories would be a lot harder.
-   -This is the coolest part... Rather than directly serving up an MP3, the software serves up a playlist. This gets passed to your player (e.g. WinAmp) which turns around with an HTTP request to stream the MP3. I must give credit to Geoff for this one :-)
+   - The pages are dynamically constructed, adjusting to directory structure and the files in those directories. This is much nicer than using simple directory indexing. While the dynamic file list could be done with various CGI or PHP-like tools, the dynamic directories would be a lot harder.
+   - This is the coolest part... Rather than directly serving up an MP3, the software serves up a playlist. This gets passed to your player (e.g. WinAmp) which turns around with an HTTP request to stream the MP3. I must give credit to Geoff for this one :-)
 
 When constructing a page for a directory, edna will list all subdirectories, MP3 song files (.mp3 extensions), playlists (.m3u extensions), certain other types of music and video files (such as .wav), and images. All other files will be ignored.
 
@@ -44,9 +44,9 @@ The server should work for any platform. I've tested it on Linux and Windows. I'
 
 Using edna is boringly simple. Make sure you have (at least) Python 1.5.2 installed on your system. Edit the edna.conf file with your setup. This is simple to do, as all you need to tell it is:
 
-   -what port to run on
-   -the directories for your MP3 files
-   -optionally, how to log requests
+   - what port to run on
+   - the directories for your MP3 files
+   - optionally, how to log requests
    
 Then, simply run edna.py. This can be done using:
 
